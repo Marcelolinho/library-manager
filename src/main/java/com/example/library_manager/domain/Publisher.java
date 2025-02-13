@@ -1,9 +1,7 @@
 package com.example.library_manager.domain;
 
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 import java.util.UUID;
 
@@ -12,6 +10,8 @@ import java.util.UUID;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
+@Getter
+@Setter
 public class Publisher {
     @Id
     @GeneratedValue(strategy= GenerationType.IDENTITY)
